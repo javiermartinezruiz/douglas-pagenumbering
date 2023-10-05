@@ -81,7 +81,6 @@ function changePage(pageNumber) {
     const copy = [...users] //To avoid mess up the reference
     const page = copy.slice(index, index + PAGE_SIZE)
     loadUsers(page)
-    return page
 }
 
 document.body.onload = function () {
